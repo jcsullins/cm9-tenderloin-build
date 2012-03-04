@@ -18,11 +18,11 @@ echo ""
 
 
 # Temporary commit for working qcom OMX decoding
-echo ">>> START 13107/4"
+echo ">>> START 13107/5"
 pushd frameworks/base
-git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_frameworks_base refs/changes/07/13107/4 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_frameworks_base refs/changes/07/13107/5 && git cherry-pick FETCH_HEAD
 popd
-echo ">>> END 13107/4"
+echo ">>> END 13107/5"
 echo ""
 
 # add headers, PRODUCT_PACKAGES for OMX
