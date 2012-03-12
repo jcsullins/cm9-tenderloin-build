@@ -55,10 +55,3 @@ popd
 echo ">>> END 12961/1"
 echo ""
 
-echo ">>> START hardare/libhardware_legacy reset cce300599"
-pushd hardware/libhardware_legacy
-git reset --hard cce300599
-popd
-echo ">>> END hardare/libhardware_legacy reset cce300599"
-echo ""
-
