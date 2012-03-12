@@ -55,3 +55,19 @@ popd
 echo ">>> END 12961/1"
 echo ""
 
+# BoardConfig: add USES_AUDIO_LEGACY define
+echo ">>> START 13530/1"
+pushd device/hp/tenderloin
+git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_device_hp_tenderloin refs/changes/30/13530/1 && git cherry-pick FETCH_HEAD
+popd
+echo ">>> END 13530/1"
+echo ""
+
+# audio: Don't use QCOM_HARDWARE when AUDIO_LEGACY active (more)
+echo ">>> START 13531/2"
+pushd hardware/libhardware_legacy
+git fetch http://review.cyanogenmod.com/p/CyanogenMod/android_hardware_libhardware_legacy refs/changes/31/13531/2 && git cherry-pick FETCH_HEAD
+popd
+echo ">>> END 13531/2"
+echo ""
+
